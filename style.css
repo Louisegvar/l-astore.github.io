@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Questrial&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ececec;
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    border-bottom: #686868 2px solid;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    flex: 20%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.logo h1{
+    color: black;
+    font-size: 40px;
+}
+
+.menu{
+    
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a{
+    color: rgb(47, 128, 182);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.menu a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.menu a:hover::before{
+    width: 80%;
+    border-bottom: 4px solid rgb(23, 63, 90);
+}
+
+#botao{
+    background: #24b1d4;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 15px;
+    margin-right: 10%;
+    margin-left: 5%;
+    border-bottom: none;
+}
+
+#botao:hover{
+    border-bottom: none;
+    background: rgb(23, 63, 90);
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #ececec;
+    padding: 100px;
+}
+
+.headline{
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color:  rgb(47, 128, 182);
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    color: gray;
+    text-align: left;
+}
+
+.img-headline{
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
+
+.header2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #ececec;
+    padding: 100px;
+}
+
+.headline2{
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.headline2 h2{
+    font-family: "questrial", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color:  rgb(45, 132, 190);
+    padding: 0;
+    margin: 0;
+}
+
+.headline2 p{
+    color: gray;
+    text-align: left;
+}
+
+
+section{
+    justify-content: center;
+    width: 95%;
+    display: block;
+    margin: 50px auto 0 auto; /* centraliza horizontalmente */
+    padding: 2%;
+    text-align: left;
+}
+
+section h2{
+    text-align: center;
+    width: 100%;
+    font-size: 100px;
+    margin: 0;
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 550;
+    color: rgb(47, 128, 182);
+}
+
+
+.servicos{
+    justify-content: center;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    justify-content: center;
+    align-items: center;
+    background: #35444e;
+    color: white;
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #36211a;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 100px;
+    color: rgb(47, 128, 182);
+}
+/* Seção de Produtos */
+.produtos {
+    max-width: 1200px; /* limita largura máxima */
+    margin: 80px auto 0 auto; /* centraliza horizontalmente com margem superior */
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.produtos h2 {
+    font-size: 60px; /* tamanho mais adequado */
+    color: rgb(47, 128, 182);
+    margin-bottom: 40px;
+    font-family: "Monsieur La Doulaise", cursive;
+}
+
+.produtos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centraliza os cards */
+    gap: 40px; /* espaçamento entre os cards */
+    padding-bottom: 16px;
+    overflow-x: visible; /* evita scroll horizontal */
+}
+
+.produto-card {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.produto-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border-color: rgb(47, 128, 182);
+}
+
+.produto-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2px;
+}
+
+.produto-card h3 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100px;
+    font-size: 22px;
+    color: #36211a;
+    margin: 10px 0 5px 0;
+}
+
+
+
+.produtos2 {
+    max-width: 200%; /* limita largura máxima */
+    margin: 80px auto 0 auto; /* centraliza horizontalmente com margem superior */
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.produtos2 h2 {
+    font-size: 60px; /* tamanho mais adequado */
+    color: rgb(47, 128, 182);
+    margin-bottom: 40px;
+    font-family: "Monsieur La Doulaise", cursive;
+}
+
+.produtos-lista2 {
+    /* max-width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centraliza os cards */
+    gap: 40px; /* espaçamento entre os cards */
+    padding-bottom: 16px;
+    overflow-x: visible; /* evita scroll horizontal */
+}
+
+.produto-card2 {
+   
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 20%;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.produto-card2:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border-color: rgb(47, 128, 182);
+}
+
+.produto-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.produto-card h3 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100px;
+    font-size: 22px;
+    color: #36211a;
+    margin: 10px 0 5px 0;
+}
+
+.produto-card .preco {
+    font-size: 20px;
+    color: #97335d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg, #53a8c2, #123f4d, black);
+    text-align: center;
+    border-top: 5px solid rgb(95, 95, 95);
+}
+
+.container {
+     width: 95%;
+     background-color: white;
+     padding: 20px;
+     border-radius: 20px; 
+     border: 1px solid #686868;
+}
+.container h2{
+    font-family: "Monsieur La Doulaise", cursive;
+    color: rgb(47, 128, 182);
+}
+.logo-rodape{
+    padding: 100px;
+}
+
+.agencia{
+    font-family: "Questrial", sans-serif;
+    color: white;
+    font-size: 34px;
+}
+/* Carrinho de compras fixo no topo direito */
+#carrinho-container {
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    background: #fff;
+    border: 2px solid #24b1d4;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 10px 16px;
+    min-width: 240px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: max-height 0.3s, opacity 0.3s;
+}
+
+#carrinho-container.fechado {
+    display: none;
+}
+/* Cabeçalho do carrinho com ícone */
+#carrinho-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+#carrinho-icone {
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: transform 0.2s;
+}
+#carrinho-icone:hover {
+    transform: scale(1.1);
+}
+
+.add-carrinho {
+    background: #24b1d4;
+    color: white;
+    border: none;
+    font-family: "questrial", sans-serif;
+    border-radius: 15px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+.add-carrinho:hover {
+    background: rgb(23, 63, 90);
+}
+/* Lista de itens do carrinho */
+#carrinho-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    max-height: 160px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#carrinho-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 15px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+/* Botão de remover item */
+.remover-item {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px;
+    transition: background 0.2s;
+}
+.remover-item:hover {
+    background: #c0392b;
+}
+
+/* Total do carrinho */
+#carrinho-total {
+    font-weight: bold;
+    color: #17405a;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
